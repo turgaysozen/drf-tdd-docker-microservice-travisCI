@@ -61,7 +61,7 @@ class Ingredient(models.Model):
 
 
 class Recipe(models.Model):
-    """Recipe model to be used for recipe"""
+    """Recipe object"""
     title = models.CharField(max_length=255)
     user = models.ForeignKey(
         settings.AUTH_USER_MODEL,
