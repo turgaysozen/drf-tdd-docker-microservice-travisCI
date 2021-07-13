@@ -4,7 +4,7 @@ from django.test import TestCase
 from rest_framework import status
 from rest_framework.test import APIClient
 from core.models import Tag
-from recipe.serializers import TagSerializer
+from ..serializers import TagSerializer
 
 TAGS_URL = reverse('recipe:tag-list')
 
